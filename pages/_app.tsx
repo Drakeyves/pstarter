@@ -40,10 +40,6 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
       <Head>
         <title>{app.name}</title>
         <link rel="icon" href="https://boxyhq.com/img/favicon.ico" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <SessionProvider session={session}>
         <Toaster 
