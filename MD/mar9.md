@@ -50,6 +50,9 @@
 3. **Challenge**: Ensuring consistent theme application
    **Solution**: Created a ThemeProvider component that applies the theme on mount
 
+4. **Challenge**: Warning about adding stylesheets in next/head
+   **Solution**: Moved the Inter font link from _app.tsx to _document.tsx
+
 ## Next Steps
 - Continue with Phase 2: Core Component Development
 - Update remaining auth pages with brand styling
@@ -62,3 +65,4 @@
 - The dark theme with accent colors is now the default
 - Use the custom components from shared directory instead of direct DaisyUI components
 - When adding new components, ensure they follow the brand guidelines and use the CSS variables
+- Font loading is handled in _document.tsx to avoid Next.js warnings
