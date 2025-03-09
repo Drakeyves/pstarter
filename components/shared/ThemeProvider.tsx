@@ -20,4 +20,4 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   return <>{children}</>;
 };
 
-export default ThemeProvider; 
+export default ThemeProvider;
