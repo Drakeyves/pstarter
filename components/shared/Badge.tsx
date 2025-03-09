@@ -19,7 +19,7 @@ const Badge: React.FC<BadgeProps> = ({
   className = '',
 }) => {
   // Base classes for all badges
-  const baseClasses = 'inline-flex items-center justify-center rounded-full font-medium';
+  const baseClasses = 'badge';
   
   // Size-specific classes
   const sizeClasses = {
@@ -30,9 +30,9 @@ const Badge: React.FC<BadgeProps> = ({
   
   // Variant-specific classes
   const variantClasses = {
-    primary: 'bg-opacity-20 bg-accent-purple text-accent-purple-light',
-    secondary: 'bg-opacity-20 bg-accent-teal text-accent-teal-light',
-    accent: 'bg-opacity-20 bg-accent-gold text-accent-gold-light',
+    primary: '',
+    secondary: 'badge-secondary',
+    accent: 'badge-accent',
     neutral: 'bg-opacity-20 bg-accent-metallic text-accent-metallic-light',
   };
   

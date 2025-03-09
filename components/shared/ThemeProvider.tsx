@@ -1,4 +1,5 @@
 import React, { ReactNode, useEffect } from 'react';
+import { applyTheme } from '@/lib/theme';
 
 interface ThemeProviderProps {
   children: ReactNode;
@@ -12,9 +13,7 @@ interface ThemeProviderProps {
 const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   useEffect(() => {
     // Apply dark theme with propulsion-society
-    document.documentElement.classList.add('dark');
-    document.documentElement.setAttribute('data-theme', 'propulsion-society');
-    localStorage.setItem('theme', 'dark');
+    applyTheme('dark');
   }, []);
 
   return <>{children}</>;

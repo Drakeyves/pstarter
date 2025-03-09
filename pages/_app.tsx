@@ -10,7 +10,6 @@ import '@boxyhq/react-ui/dist/react-ui.css';
 import '../styles/globals.css';
 import { useEffect } from 'react';
 import env from '@/lib/env';
-import { applyTheme } from '@/lib/theme';
 import { Themer } from '@boxyhq/react-ui/shared';
 import { AccountLayout } from '@/components/layouts';
 import { ThemeProvider } from '@/components/shared';
@@ -27,9 +26,6 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
         track_pageview: true,
       });
     }
-
-    // Always apply dark theme with propulsion-society
-    applyTheme('dark');
   }, []);
 
   const getLayout =

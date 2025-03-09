@@ -86,7 +86,7 @@ const APIKeys = ({ team }: APIKeysProps) => {
                     { wrap: true, text: apiKey.name },
                     {
                       badge: {
-                        color: 'success',
+                        color: 'secondary',
                         text: t('active'),
                       },
                     },

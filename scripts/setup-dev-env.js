@@ -53,7 +53,7 @@ let dockerInstalled = false;
 try {
   execSync('docker --version', { stdio: 'ignore' });
   dockerInstalled = true;
-} catch (error) {
+} catch {
   // Docker is not installed
 }
 

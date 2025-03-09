@@ -10,7 +10,7 @@ interface CardProps {
  */
 const Card = ({ children, hover = true }: CardProps) => {
   return (
-    <div className={`card w-full border border-rounded border-accent-metallic-dark bg-gradient-to-br from-bg-secondary to-bg-primary rounded-lg ${hover ? 'hover:translate-y-[-2px] transition-transform duration-200' : ''}`}>
+    <div className={`card w-full border border-rounded border-accent-metallic-dark ${hover ? '' : 'hover:transform-none'}`}>
       {children}
     </div>
   );
