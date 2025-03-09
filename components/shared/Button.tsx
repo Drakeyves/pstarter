@@ -12,7 +12,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 /**
  * Custom Button component that follows the Propulsion Society brand guidelines
- * 
+ *
  * Features gradient backgrounds, hover effects, and consistent styling
  */
 const Button: React.FC<ButtonProps> = ({
@@ -35,7 +35,7 @@ const Button: React.FC<ButtonProps> = ({
   };
 
   const color = colorMap[variant];
-  
+
   // Add custom classes for our styling
   const customClass = `btn-${variant} ${className}`;
 

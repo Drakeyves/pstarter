@@ -16,6 +16,7 @@ docker-compose up -d
 ```
 
 This will start a PostgreSQL instance with the following configuration:
+
 - Database name: saas-starter-kit
 - Username: admin
 - Password: admin
@@ -29,4 +30,4 @@ After ensuring Node.js (>=18.x) and NPM are installed, run:
 npm install
 ```
 
-This will install all the required dependencies for the project. 
+This will install all the required dependencies for the project.

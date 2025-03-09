@@ -7,7 +7,7 @@ interface ThemeProviderProps {
 
 /**
  * ThemeProvider component that ensures the application uses the Propulsion Society theme
- * 
+ *
  * This component applies the dark theme with propulsion-society styling on mount
  */
 const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {

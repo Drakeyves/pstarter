@@ -133,4 +133,4 @@ You can monitor your database usage from the Neon dashboard:
 2. **Limit sensitive operations**: Be cautious with schema migrations on shared branches
 3. **Regular backups**: Although Neon provides point-in-time recovery, consider additional backups for critical data
 4. **Monitor connection limits**: Be aware of the connection limits on your Neon plan
-5. **Use connection pooling**: For production environments, use connection pooling to manage connections efficiently 
+5. **Use connection pooling**: For production environments, use connection pooling to manage connections efficiently

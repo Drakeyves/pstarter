@@ -41,11 +41,13 @@ Edit the `.env.development` file to use a local database or a development databa
 ### 4. Set up local database
 
 Option 1: Use Docker (recommended for local development)
+
 ```bash
 docker-compose up -d
 ```
 
 Option 2: Use a development database on Neon
+
 - Create a new database branch in your Neon dashboard
 - Update the `DATABASE_URL` in your `.env.development` file
 
@@ -70,6 +72,7 @@ npm run dev
 ## Feature Development Process
 
 1. Create a feature branch from `dev`
+
    ```bash
    git checkout dev
    git pull
@@ -79,12 +82,14 @@ npm run dev
 2. Implement your feature with regular commits
 
 3. Test your feature locally
+
    ```bash
    npm run test
    npm run test:e2e
    ```
 
 4. Push your feature branch
+
    ```bash
    git push -u origin feature/your-feature-name
    ```
@@ -190,10 +195,12 @@ If you encounter deployment issues on Vercel:
 ### Common Development Issues
 
 1. **Next.js Hot Reload Not Working**
+
    - Try restarting the development server
    - Check for syntax errors in your code
 
 2. **Prisma Client Generation Errors**
+
    - Run `npx prisma generate` to regenerate the Prisma client
    - Ensure your schema.prisma file is valid
 
@@ -208,4 +215,4 @@ If you're stuck on an issue:
 1. Check the project documentation
 2. Search for similar issues in the GitHub repository
 3. Ask for help in the team communication channels
-4. Create a detailed GitHub issue if it's a bug or feature request 
+4. Create a detailed GitHub issue if it's a bug or feature request

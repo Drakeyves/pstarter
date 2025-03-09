@@ -10,7 +10,9 @@ interface CardProps {
  */
 const Card = ({ children, hover = true }: CardProps) => {
   return (
-    <div className={`card w-full border border-rounded border-accent-metallic-dark ${hover ? '' : 'hover:transform-none'}`}>
+    <div
+      className={`card w-full border border-rounded border-accent-metallic-dark ${hover ? '' : 'hover:transform-none'}`}
+    >
       {children}
     </div>
   );
@@ -31,9 +33,7 @@ const Title = ({ children }: { children: React.ReactNode }) => {
  * Card description component with brand styling
  */
 const Description = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div className="text-accent-metallic text-sm">{children}</div>
-  );
+  return <div className="text-accent-metallic text-sm">{children}</div>;
 };
 
 /**

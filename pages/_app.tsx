@@ -38,15 +38,15 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
         <link rel="icon" href="https://boxyhq.com/img/favicon.ico" />
       </Head>
       <SessionProvider session={session}>
-        <Toaster 
-          toastOptions={{ 
+        <Toaster
+          toastOptions={{
             duration: 4000,
             style: {
               background: '#141421',
               color: '#C5C5D3',
               border: '1px solid #71718A',
             },
-          }} 
+          }}
         />
         <ThemeProvider>
           <Themer

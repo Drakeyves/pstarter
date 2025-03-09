@@ -114,7 +114,9 @@ export const TableBody = ({
                     </span>
                   )}
                   {cell.badge ? (
-                    <Badge variant={cell.badge.color as any}>{cell.badge.text}</Badge>
+                    <Badge variant={cell.badge.color as any}>
+                      {cell.badge.text}
+                    </Badge>
                   ) : null}
                   {cell.text ? cell.text : null}
                   {cell.element ? cell.element : null}

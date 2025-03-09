@@ -81,4 +81,4 @@ The application will be available at http://localhost:4002
 
 ## Getting Help
 
-If you encounter any issues during setup, refer to the full [DEVELOPMENT.md](./DEVELOPMENT.md) document or reach out to the team lead. 
+If you encounter any issues during setup, refer to the full [DEVELOPMENT.md](./DEVELOPMENT.md) document or reach out to the team lead.

@@ -4,30 +4,30 @@
 
 :root {
   color-scheme: dark;
-  
+
   /* Brand Colors */
-  --bg-primary: #0D0D14;
+  --bg-primary: #0d0d14;
   --bg-secondary: #141421;
-  
-  --accent-purple-light: #9F7AEA;
-  --accent-purple: #7A6FE3;
-  --accent-purple-dark: #553C9A;
-  
-  --accent-teal-light: #2ED6A7;
-  --accent-teal: #25B592;
-  --accent-teal-dark: #1C8870;
-  
-  --accent-gold-light: #F7B731;
-  --accent-gold: #F5A623;
-  --accent-gold-dark: #D48806;
-  
-  --accent-metallic-light: #C5C5D3;
-  --accent-metallic: #A1A1B5;
-  --accent-metallic-dark: #71718A;
-  
+
+  --accent-purple-light: #9f7aea;
+  --accent-purple: #7a6fe3;
+  --accent-purple-dark: #553c9a;
+
+  --accent-teal-light: #2ed6a7;
+  --accent-teal: #25b592;
+  --accent-teal-dark: #1c8870;
+
+  --accent-gold-light: #f7b731;
+  --accent-gold: #f5a623;
+  --accent-gold-dark: #d48806;
+
+  --accent-metallic-light: #c5c5d3;
+  --accent-metallic: #a1a1b5;
+  --accent-metallic-dark: #71718a;
+
   /* Typography */
   --font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  
+
   /* Transitions */
   --transition-speed: 200ms;
   --transition-function: ease-in-out;
@@ -58,8 +58,9 @@ a {
     background-color: var(--bg-secondary);
     border-color: var(--accent-metallic-dark);
   }
-  
-  input:focus, textarea:focus {
+
+  input:focus,
+  textarea:focus {
     border-color: var(--accent-purple);
     outline-color: var(--accent-purple);
   }
@@ -74,34 +75,58 @@ a {
     @apply rounded normal-case;
     transition: all var(--transition-speed) var(--transition-function);
   }
-  
+
   .btn-primary {
-    background: linear-gradient(135deg, var(--accent-purple) 0%, var(--accent-purple-dark) 100%);
+    background: linear-gradient(
+      135deg,
+      var(--accent-purple) 0%,
+      var(--accent-purple-dark) 100%
+    );
     border: none;
   }
-  
+
   .btn-primary:hover {
-    background: linear-gradient(135deg, var(--accent-purple-light) 0%, var(--accent-purple) 100%);
+    background: linear-gradient(
+      135deg,
+      var(--accent-purple-light) 0%,
+      var(--accent-purple) 100%
+    );
     transform: translateY(-1px);
   }
-  
+
   .btn-secondary {
-    background: linear-gradient(135deg, var(--accent-teal) 0%, var(--accent-teal-dark) 100%);
+    background: linear-gradient(
+      135deg,
+      var(--accent-teal) 0%,
+      var(--accent-teal-dark) 100%
+    );
     border: none;
   }
-  
+
   .btn-secondary:hover {
-    background: linear-gradient(135deg, var(--accent-teal-light) 0%, var(--accent-teal) 100%);
+    background: linear-gradient(
+      135deg,
+      var(--accent-teal-light) 0%,
+      var(--accent-teal) 100%
+    );
     transform: translateY(-1px);
   }
-  
+
   .btn-accent {
-    background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-gold-dark) 100%);
+    background: linear-gradient(
+      135deg,
+      var(--accent-gold) 0%,
+      var(--accent-gold-dark) 100%
+    );
     border: none;
   }
-  
+
   .btn-accent:hover {
-    background: linear-gradient(135deg, var(--accent-gold-light) 0%, var(--accent-gold) 100%);
+    background: linear-gradient(
+      135deg,
+      var(--accent-gold-light) 0%,
+      var(--accent-gold) 100%
+    );
     transform: translateY(-1px);
   }
 
@@ -117,13 +142,17 @@ a {
   .btn-error:focus-visible {
     @apply outline-error;
   }
-  
+
   .card {
-    background: linear-gradient(145deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    background: linear-gradient(
+      145deg,
+      var(--bg-secondary) 0%,
+      var(--bg-primary) 100%
+    );
     border-radius: 0.5rem;
     transition: transform var(--transition-speed) var(--transition-function);
   }
-  
+
   .card:hover {
     transform: translateY(-2px);
   }

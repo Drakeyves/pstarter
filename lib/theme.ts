@@ -26,7 +26,10 @@ export const applyTheme = (theme: Theme) => {
     default:
       if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.documentElement.classList.add('dark');
-        document.documentElement.setAttribute('data-theme', 'propulsion-society');
+        document.documentElement.setAttribute(
+          'data-theme',
+          'propulsion-society'
+        );
         localStorage.removeItem('theme');
       } else {
         document.documentElement.classList.remove('dark');

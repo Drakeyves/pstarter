@@ -22,11 +22,13 @@ This document outlines the communication channels and expectations for the SaaS 
 ### Regular Check-ins
 
 - **Daily Standup**: 15 minutes, Monday-Friday at 10:00 AM
+
   - What did you work on yesterday?
   - What are you working on today?
   - Are there any blockers?
 
 - **Weekly Planning**: 1 hour, Monday at 11:00 AM
+
   - Review progress from the previous week
   - Plan tasks for the current week
   - Discuss any upcoming challenges or dependencies
@@ -59,6 +61,7 @@ This document outlines the communication channels and expectations for the SaaS 
 ### Status Updates
 
 - Update your Slack status when:
+
   - In a meeting
   - On a break
   - Focusing on deep work
@@ -112,4 +115,4 @@ If you encounter issues that cannot be resolved through normal channels:
 - Assign a buddy for the first two weeks
 - Schedule 1:1 onboarding sessions
 - Provide access to all necessary tools and documentation
-- Review this document together 
+- Review this document together

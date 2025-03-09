@@ -107,6 +107,10 @@
     },
     "react-email": {
       "esbuild": ">=0.25.0"
+    },
+    "jose": "4.15.9",
+    "@boxyhq/saml-jackson": {
+      "jose": "4.15.9"
     }
   }
 }
