@@ -1,38 +1,61 @@
 import React from 'react';
 
-const Card = ({ children }: { children: React.ReactNode }) => {
+interface CardProps {
+  children: React.ReactNode;
+  hover?: boolean;
+}
+
+/**
+ * Card component with subtle gradient background and optional hover effect
+ */
+const Card = ({ children, hover = true }: CardProps) => {
   return (
-    <div className="card w-full border border-rounded dark:bg-black dark:border-gray-600">
+    <div className={`card w-full border border-rounded border-accent-metallic-dark bg-gradient-to-br from-bg-secondary to-bg-primary rounded-lg ${hover ? 'hover:translate-y-[-2px] transition-transform duration-200' : ''}`}>
       {children}
     </div>
   );
 };
 
+/**
+ * Card title component with brand styling
+ */
 const Title = ({ children }: { children: React.ReactNode }) => {
   return (
-    <h2 className="card-title text-xl font-medium leading-none tracking-tight">
+    <h2 className="card-title text-xl font-medium leading-none tracking-tight text-accent-metallic-light">
       {children}
     </h2>
   );
 };
 
+/**
+ * Card description component with brand styling
+ */
 const Description = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="text-gray-600 dark:text-gray-400 text-sm">{children}</div>
+    <div className="text-accent-metallic text-sm">{children}</div>
   );
 };
 
+/**
+ * Card header section
+ */
 const Header = ({ children }: { children: React.ReactNode }) => {
   return <div className="flex gap-2 flex-col">{children}</div>;
 };
 
+/**
+ * Card body section with proper padding and spacing
+ */
 const Body = ({ children }: { children: React.ReactNode }) => {
-  return <div className="card-body dark:bg-black gap-4 p-6">{children}</div>;
+  return <div className="card-body gap-4 p-6">{children}</div>;
 };
 
+/**
+ * Card footer section with subtle border
+ */
 const Footer = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="card-actions justify-end dark:border-gray-600 p-2 border-t bg-gray-50 dark:bg-black">
+    <div className="card-actions justify-end p-4 border-t border-accent-metallic-dark bg-bg-secondary rounded-b-lg">
       {children}
     </div>
   );
