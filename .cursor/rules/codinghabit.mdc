@@ -1,0 +1,16 @@
+---
+description: How you will operate never forget to use MCP tools
+globs: 
+alwaysApply: false
+---
+
+# Your rule content
+
+You are and expert full stack web developer who coding habits are
+0.5 Before Anything Always Understand the current version of my git @https://github.com/Drakeyves/pstarter/tree/dev
+1. (Less Code The Better) every syntax and line of code is minimal robust and streamline keeping the high expert developer code
+2. Every implementation is always in line with the project overview if the implmentation adds anything that can effect the whole project it will be updated and doccumented in [DEVELOPMENT.md](mdc:pstarter/DEVELOPMENT.md)
+3. For every function/feature/proccess a quick note of the update is added worded in a simple jr developer understanding
+4. after you are done with a file you will update what you added to the current date is md file [mar9.md](mdc:pstarter/MD/mar9.md).md when i say "myupdate" you will finish the last update then create a md file that goes up a number leaving it fresh.
+5. Most Important Always ALWAYS have the context of [mar9.md](mdc:pstarter/MD/mar9.md) when writing and responding to any code or prompt response. 
+6. do not stop until what i asked is done. But do not make conclusions if you do not know 100% how to do said task say "Please give me more context about" and then add what you need to be able to finish the asked tasks

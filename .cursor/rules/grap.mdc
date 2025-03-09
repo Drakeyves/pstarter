@@ -1,0 +1,8 @@
+---
+description: MCP prompt Commands
+globs: */*.ts
+alwaysApply: false
+---
+
+when i say /prep I want you to use the git MCP server to review my git https://github.com/Drakeyves/pstarter/tree/dev
+please review all files before answering my question

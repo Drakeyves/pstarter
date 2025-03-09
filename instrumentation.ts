@@ -16,3 +16,8 @@ export function register() {
     });
   }
 }
+
+// Add onRequestError hook for Sentry
+export function onRequestError({ request, response, error }) {
+  Sentry.captureRequestError(error, request, response);
+}

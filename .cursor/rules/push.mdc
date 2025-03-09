@@ -1,0 +1,6 @@
+---
+description: uses MCP to Search Git Then Push all current commmits
+globs: */*.ts
+alwaysApply: false
+---
+when i say /pushy run search_repositoriesthan push_files 
