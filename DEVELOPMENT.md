@@ -122,6 +122,43 @@ Neon allows you to create database branches for development:
 
 This allows you to have isolated database environments for each feature.
 
+### Connecting to Neon Database
+
+To connect to the Neon database:
+
+1. Make sure you have the correct `DATABASE_URL` in your `.env.development` file
+2. The URL format should be: `postgresql://user:password@hostname:port/database`
+3. If you're having connection issues, ensure your IP is whitelisted in the Neon dashboard
+4. For local development, you can use the Neon web SQL editor for quick database checks
+
+## Code Standards and Best Practices
+
+### TypeScript Guidelines
+
+- Always use proper TypeScript types instead of `any`
+- Create interfaces for complex data structures in the `types` directory
+- Use type guards when necessary to ensure type safety
+
+### React Component Structure
+
+- Use functional components with hooks
+- Keep components small and focused on a single responsibility
+- Place shared components in the `components` directory
+- Use proper prop typing with TypeScript interfaces
+
+### CSS/Styling Guidelines
+
+- Use Tailwind CSS utility classes for styling
+- For complex components, consider using component composition
+- Follow the project's existing design patterns for consistency
+
+### API Routes
+
+- Place API routes in the `pages/api` directory
+- Use proper request validation
+- Follow RESTful principles
+- Handle errors gracefully and return appropriate status codes
+
 ## Deployment
 
 ### Development Deployment
@@ -148,4 +185,27 @@ If you encounter deployment issues on Vercel:
 
 1. Check the build logs in the Vercel dashboard
 2. Ensure all environment variables are correctly set in the Vercel project settings
-3. Verify that the build command is correctly set to `npm run build` 
+3. Verify that the build command is correctly set to `npm run build`
+
+### Common Development Issues
+
+1. **Next.js Hot Reload Not Working**
+   - Try restarting the development server
+   - Check for syntax errors in your code
+
+2. **Prisma Client Generation Errors**
+   - Run `npx prisma generate` to regenerate the Prisma client
+   - Ensure your schema.prisma file is valid
+
+3. **Authentication Issues**
+   - Check that your NEXTAUTH_SECRET and NEXTAUTH_URL are set correctly
+   - Verify that your OAuth providers are configured properly
+
+## Getting Help
+
+If you're stuck on an issue:
+
+1. Check the project documentation
+2. Search for similar issues in the GitHub repository
+3. Ask for help in the team communication channels
+4. Create a detailed GitHub issue if it's a bug or feature request 
