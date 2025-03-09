@@ -161,6 +161,23 @@ npm run test:e2e
 
 _Note: HTML test report is generated inside the `report` folder. Currently supported browsers for test execution `chromium` and `firefox`_
 
+### Development Workflow
+
+For a detailed guide on our development workflow, including branching strategy, testing, and deployment, please refer to the [DEVELOPMENT.md](DEVELOPMENT.md) document.
+
+Quick start for development:
+
+```bash
+# Set up development environment
+npm run dev:setup
+
+# Create a feature branch
+git checkout -b feature/your-feature-name
+
+# Start development server
+npm run dev
+```
+
 ## ⚙️ Feature configuration
 
 To get started you only need to configure the database by following the steps above. For more advanced features, you can configure the following:

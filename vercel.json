@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "saas-starter-kit",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "git": {
+    "deploymentEnabled": {
+      "main": true,
+      "dev": false
+    }
+  }
+} 

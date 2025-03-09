@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "name": "saas-starter-kit-dev",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "env": {
+    "NEXTAUTH_URL": "https://dev-pstarter.vercel.app",
+    "APP_URL": "https://dev-pstarter.vercel.app"
+  },
+  "build": {
+    "env": {
+      "NEXTAUTH_URL": "https://dev-pstarter.vercel.app",
+      "APP_URL": "https://dev-pstarter.vercel.app"
+    }
+  },
+  "git": {
+    "deploymentEnabled": {
+      "main": false,
+      "dev": true
+    }
+  }
+} 

@@ -11,6 +11,8 @@
   "scripts": {
     "release": "git checkout release && git merge origin/main && release-it && git checkout main && git merge origin/release && git push origin main",
     "dev": "next dev --port 4002",
+    "dev:setup": "node scripts/setup-dev-env.js",
+    "dev:feature": "node scripts/setup-dev-env.js",
     "build": "prisma generate && prisma db push && next build",
     "start": "next start --port 4002",
     "check-types": "tsc --pretty --noEmit",
